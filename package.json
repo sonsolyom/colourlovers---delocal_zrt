@@ -1,0 +1,25 @@
+{
+  "name": "colourlovers",
+  "version": "1.0.0",
+  "description": "This is an example application for Delocal Zrt as ColourLovers.",
+  "main": "app.js",
+  "proxy": "http://www.colourlovers.com/api/palettes/new?format=json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "frontend",
+    "developement",
+    "example",
+    "simple",
+    "application"
+  ],
+  "author": "Nagy Solyom",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

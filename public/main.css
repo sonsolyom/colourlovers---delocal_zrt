@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+ h4 {
+  font-size: 2rem;
+ }
+
+p {
+  font-size: 1.8rem;
+}
+
+.demo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FEEEB9;
+}
+
+.themes {
+  display: flex;
+  margin: .5rem;
+  background-color: #40AFDE;
+  -webkit-box-shadow: 9px 7px 19px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 7px 19px -6px rgba(0,0,0,0.75);
+  box-shadow: 9px 7px 19px -6px rgba(0,0,0,0.75);
+}
+
+.theme {
+  border: 1px solid black;
+  text-align: center;
+  min-width: 400px;
+  min-height: 400px;
+}
+
