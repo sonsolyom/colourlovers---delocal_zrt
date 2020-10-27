@@ -6,7 +6,6 @@ async function getThemes() {
   // Assigned the response to a reassignable variable and use the json method to convert it.
   let data = await response.json()
 
-
   // We return the response
   return data
 }
@@ -31,12 +30,7 @@ function showThemes(themes) {
     themes[8],
     themes[9]
   ]
-  /*for (let i = 0; i < themes.length && i < 10; i++) {
-    let firstArr = themes[i];
-    console.log(firstArr[0])
-  }*/
-
- // console.log(firstArr)
+  
   this.theme = document.querySelector('.demo')
   
   let output = '';
@@ -53,7 +47,6 @@ function showThemes(themes) {
       </div>
     </div>
     `;
-    
   });
 
   let secondArr = [
@@ -68,7 +61,6 @@ function showThemes(themes) {
     themes[18],
     themes[19]
   ]
-  //console.log(secondArr)
 
   secondArr.forEach((theme) => {
     outputAfter += `
@@ -83,12 +75,7 @@ function showThemes(themes) {
     `;
   });;
   
-  window.addEventListener('scroll', function() {
-    if (scrollTop + clientHeight >= scrollHeight - 5) {
-      this.theme.innerHTML += outputAfter;
-   }
-  });
-
+  // Scroll event listener
   window.addEventListener('scroll', () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
     
@@ -99,7 +86,6 @@ function showThemes(themes) {
       this.theme.innerHTML = output + outputAfter;
     }
   });
-
 
   this.theme.innerHTML = output;
 }
